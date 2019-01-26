@@ -1,6 +1,6 @@
 ﻿#################################################################
-## Version 3.0                                                 ##
-## Copyright (c) 2014 Eugenio Gomez Minguet.                   ##
+## Version 1.0                                                 ##
+## Copyright (c) 2018 Eugenio Gomez Minguet.                   ##
 ##                                                             ##
 ## Author : Eugenio Gómez Minguet                              ##
 ## @mail : eugeniogomez@ono.com                                ##
