@@ -68,5 +68,6 @@ RESULTS
   Other interesting case is when a very specific location must be targeted. It is possible that with defined parameters (L0 and L1) no optimal candidate had been selected. However, manual evaluation can allow user to select some candidates: if L0 =5 and L1 =4, some possible off-targets can have 4 mismatches distributed in distal sequence (zero mismatches in seed sequence) or 1 mismatch in seed sequence and 2 in distal sequence. Available information about DNA affinity indicates that those cases are very unlikely to be real offtargets "in vivo", moreover if they are not located in the last nucleotides of the target sequence (from PAM).
 
 Example of sequences input file: PDS3_exons.txt
-Examples of result files: 2019-01-27_12_29_ALLsgRNAs(PDS3_exons.txt_Cas9).txt
-                          2019-01-27_12_30_ALLsgRNAs(PDS3_exons.txt_Cas12a).txt
+Examples of result files:
+2019-01-27_12_29_ALLsgRNAs(PDS3_exons.txt_Cas9).txt
+2019-01-27_12_30_ALLsgRNAs(PDS3_exons.txt_Cas12a).txt
