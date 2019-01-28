@@ -70,4 +70,5 @@ RESULTS
 Example of sequences input file: PDS3_exons.txt
 Examples of result files:
 2019-01-27_12_29_ALLsgRNAs(PDS3_exons.txt_Cas9).txt
+
 2019-01-27_12_30_ALLsgRNAs(PDS3_exons.txt_Cas12a).txt
