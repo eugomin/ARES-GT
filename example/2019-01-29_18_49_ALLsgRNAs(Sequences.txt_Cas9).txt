@@ -1,0 +1,2581 @@
+Analysis of ALL possible sgRNAs targets in sequence(s) from Sequences.txt
+
+		Started at 2019-01-29 18:49:20
+
+Conditions:
+==========
+		Seed sequence size = 11 nucleotides
+	L0 (NO mismatch in seed sequence)  -> Possible offtarget if global mismatches are less than 6
+	L1 (1 mismatch in seed sequence)   -> Possible offtarget if global mismatches are less than 5
+	Take into account offtargets with "NAG" PAM?  Yes
+
+ALL possible Targets found in sequences:
+
+SeqName	PosStart	PosEnd	Sense	Sequence(with PAM)
+EXAMPLE01_001	95	117	+	AATATTTAATTTCACCGAAC TGG
+EXAMPLE01_002	104	126	+	TTTCACCGAACTGGATTAGA TGG
+EXAMPLE01_003	112	134	+	AACTGGATTAGATGGTATAA TGG
+EXAMPLE01_004	113	135	+	ACTGGATTAGATGGTATAAT GGG
+EXAMPLE01_005	259	281	+	TAATGTTTAATTTCACCGAA TGG
+EXAMPLE01_006	268	290	+	ATTTCACCGAATGGTATAGA TGG
+EXAMPLE01_007	13	35	-	CCA TTTGAAAGAAAACTTTTTAA
+EXAMPLE01_008	109	131	-	CCG AACTGGATTAGATGGTATAA
+EXAMPLE01_009	178	200	-	CCA TTTGAAAGAAAACTTTTTAA
+EXAMPLE02_010	14	36	+	CCAACGAAAGAAGATGATCA AGG
+EXAMPLE02_011	51	73	+	CTACGAAGAGACACACTAAG TGG
+EXAMPLE02_012	85	107	+	CCCCCCCCCCCAAAAGTGAT TGG
+EXAMPLE02_013	119	141	+	TTATGATGCTTCTCACCATA CGG
+EXAMPLE02_014	120	142	+	TATGATGCTTCTCACCATAC GGG
+EXAMPLE02_015	121	143	+	ATGATGCTTCTCACCATACG GGG
+EXAMPLE02_016	135	157	+	CATACGGGGAATACAATGTC TGG
+EXAMPLE02_017	141	163	+	GGGAATACAATGTCTGGACT AGG
+EXAMPLE02_018	142	164	+	GGAATACAATGTCTGGACTA GGG
+EXAMPLE02_019	145	167	+	ATACAATGTCTGGACTAGGG TGG
+EXAMPLE02_020	165	187	+	TGGCTTATCCGCAACTCTCA TGG
+EXAMPLE02_021	170	192	+	TATCCGCAACTCTCATGGCA CGG
+EXAMPLE02_022	176	198	+	CAACTCTCATGGCACGGTTT TGG
+EXAMPLE02_023	183	205	+	CATGGCACGGTTTTGGAATG CGG
+EXAMPLE02_024	188	210	+	CACGGTTTTGGAATGCGGTA TGG
+EXAMPLE02_025	189	211	+	ACGGTTTTGGAATGCGGTAT GGG
+EXAMPLE02_026	190	212	+	CGGTTTTGGAATGCGGTATG GGG
+EXAMPLE02_027	201	223	+	TGCGGTATGGGGTAGTTTCA AGG
+EXAMPLE02_028	14	36	-	CCA ACGAAAGAAGATGATCAAGG
+EXAMPLE02_029	50	72	-	CCT ACGAAGAGACACACTAAGTG
+EXAMPLE02_030	76	98	-	CCC CCCCCCCCCCCCCCCCCAAA
+EXAMPLE02_031	77	99	-	CCC CCCCCCCCCCCCCCCCAAAA
+EXAMPLE02_032	78	100	-	CCC CCCCCCCCCCCCCCCAAAAG
+EXAMPLE02_033	79	101	-	CCC CCCCCCCCCCCCCCAAAAGT
+EXAMPLE02_034	80	102	-	CCC CCCCCCCCCCCCCAAAAGTG
+EXAMPLE02_035	81	103	-	CCC CCCCCCCCCCCCAAAAGTGA
+EXAMPLE02_036	82	104	-	CCC CCCCCCCCCCCAAAAGTGAT
+EXAMPLE02_037	83	105	-	CCC CCCCCCCCCCAAAAGTGATT
+EXAMPLE02_038	84	106	-	CCC CCCCCCCCCAAAAGTGATTG
+EXAMPLE02_039	85	107	-	CCC CCCCCCCCAAAAGTGATTGG
+EXAMPLE02_040	86	108	-	CCC CCCCCCCAAAAGTGATTGGC
+EXAMPLE02_041	87	109	-	CCC CCCCCCAAAAGTGATTGGCT
+EXAMPLE02_042	88	110	-	CCC CCCCCAAAAGTGATTGGCTA
+EXAMPLE02_043	89	111	-	CCC CCCCAAAAGTGATTGGCTAA
+EXAMPLE02_044	90	112	-	CCC CCCAAAAGTGATTGGCTAAA
+EXAMPLE02_045	91	113	-	CCC CCAAAAGTGATTGGCTAAAG
+EXAMPLE02_046	92	114	-	CCC CAAAAGTGATTGGCTAAAGT
+EXAMPLE02_047	93	115	-	CCC AAAAGTGATTGGCTAAAGTG
+EXAMPLE02_048	94	116	-	CCA AAAGTGATTGGCTAAAGTGC
+EXAMPLE02_049	134	156	-	CCA TACGGGGAATACAATGTCTG
+EXAMPLE02_050	173	195	-	CCG CAACTCTCATGGCACGGTTT
+EXAMPLE03_051	16	38	+	TTTCTATAGATTAGAAGAAC CGG
+EXAMPLE03_052	30	52	+	AAGAACCGGAACAAGCCCAT TGG
+EXAMPLE03_053	43	65	+	AGCCCATTGGCAACAGTATC CGG
+EXAMPLE03_054	68	90	+	TGATTATAACATTGCAGTAG TGG
+EXAMPLE03_055	78	100	+	ATTGCAGTAGTGGTATGTCT TGG
+EXAMPLE03_056	88	110	+	TGGTATGTCTTGGAGAATCG AGG
+EXAMPLE03_057	115	137	+	ACTCATCGAGTTTAAATGTG TGG
+EXAMPLE03_058	118	140	+	CATCGAGTTTAAATGTGTGG TGG
+EXAMPLE03_059	157	179	+	CAGATTTACTTAAAGAGTGA AGG
+EXAMPLE03_060	158	180	+	AGATTTACTTAAAGAGTGAA GGG
+EXAMPLE03_061	162	184	+	TTACTTAAAGAGTGAAGGGA AGG
+EXAMPLE03_062	176	198	+	AAGGGAAGGTGCTATAAAAA AGG
+EXAMPLE03_063	186	208	+	GCTATAAAAAAGGATCTTGT TGG
+EXAMPLE03_064	229	251	+	GTCTTCTCCGCCGCACCCTT TGG
+EXAMPLE03_065	230	252	+	TCTTCTCCGCCGCACCCTTT GGG
+EXAMPLE03_066	349	371	+	TCTATATACAACAGATTAAA TGG
+EXAMPLE03_067	35	57	-	CCG GAACAAGCCCATTGGCAACA
+EXAMPLE03_068	45	67	-	CCC ATTGGCAACAGTATCCGGTA
+EXAMPLE03_069	46	68	-	CCA TTGGCAACAGTATCCGGTAT
+EXAMPLE03_070	62	84	-	CCG GTATGATTATAACATTGCAG
+EXAMPLE03_071	209	231	-	CCA CGAGCTTCTTCCTTTTCGTC
+EXAMPLE03_072	222	244	-	CCT TTTCGTCTTCTCCGCCGCAC
+EXAMPLE03_073	236	258	-	CCG CCGCACCCTTTGGGTCAACA
+EXAMPLE03_074	239	261	-	CCG CACCCTTTGGGTCAACAGTT
+EXAMPLE03_075	244	266	-	CCC TTTGGGTCAACAGTTAAACC
+EXAMPLE03_076	245	267	-	CCT TTGGGTCAACAGTTAAACCC
+EXAMPLE03_077	265	287	-	CCC TCTCCATTACGCGTGTGAGT
+EXAMPLE03_078	266	288	-	CCT CTCCATTACGCGTGTGAGTA
+EXAMPLE03_079	271	293	-	CCA TTACGCGTGTGAGTATACAC
+EXAMPLE03_080	340	362	-	CCT GCCTGTTCTATATACAACAG
+EXAMPLE03_081	344	366	-	CCT GTTCTATATACAACAGATTA
+EXAMPLE04_082	39	61	+	ACCTTATTATATATCTTTTT AGG
+EXAMPLE04_083	40	62	+	CCTTATTATATATCTTTTTA GGG
+EXAMPLE04_084	41	63	+	CTTATTATATATCTTTTTAG GGG
+EXAMPLE04_085	42	64	+	TTATTATATATCTTTTTAGG GGG
+EXAMPLE04_086	46	68	+	TATATATCTTTTTAGGGGGT CGG
+EXAMPLE04_087	74	96	+	TATTACGTACAACCTTTTGT TGG
+EXAMPLE04_088	167	189	+	ATATATATTAAACACACATT TGG
+EXAMPLE04_089	190	212	+	TAGTAGCAAACTTGTCGCTT TGG
+EXAMPLE04_090	338	360	+	TCTTACATACCACTTTGAAA AGG
+EXAMPLE04_091	339	361	+	CTTACATACCACTTTGAAAA GGG
+EXAMPLE04_092	346	368	+	ACCACTTTGAAAAGGGATCG AGG
+EXAMPLE04_093	11	33	-	CCC ATCAATTTCAGATCCCTCGC
+EXAMPLE04_094	12	34	-	CCA TCAATTTCAGATCCCTCGCT
+EXAMPLE04_095	27	49	-	CCC TCGCTCTCCACCTTATTATA
+EXAMPLE04_096	28	50	-	CCT CGCTCTCCACCTTATTATAT
+EXAMPLE04_097	37	59	-	CCA CCTTATTATATATCTTTTTA
+EXAMPLE04_098	40	62	-	CCT TATTATATATCTTTTTAGGG
+EXAMPLE04_099	86	108	-	CCT TTTGTTGGTATACTCCTCTT
+EXAMPLE04_100	103	125	-	CCT CTTCTTCTTCTTCTTTTGTG
+EXAMPLE04_101	129	151	-	CCG TATACTCATTTTCTCAAATT
+EXAMPLE04_102	254	276	-	CCC TTATTAATATGATTGAACAA
+EXAMPLE04_103	255	277	-	CCT TATTAATATGATTGAACAAA
+EXAMPLE04_104	347	369	-	CCA CTTTGAAAAGGGATCGAGGA
+EXAMPLO05_105	116	138	+	TACTTGCCCAAAAAAAAAAA AGG
+EXAMPLO05_106	133	155	+	AAAAGGATGTCATAATATAT TGG
+EXAMPLO05_107	134	156	+	AAAGGATGTCATAATATATT GGG
+EXAMPLO05_108	182	204	+	TTTTCATGATTAAAACTTTG TGG
+EXAMPLO05_109	200	222	+	TGTGGCTTGCAAACTATATT TGG
+EXAMPLO05_110	201	223	+	GTGGCTTGCAAACTATATTT GGG
+EXAMPLO05_111	74	96	-	CCC CATATTTTTGATGTTGTACT
+EXAMPLO05_112	75	97	-	CCC ATATTTTTGATGTTGTACTG
+EXAMPLO05_113	76	98	-	CCA TATTTTTGATGTTGTACTGT
+EXAMPLO05_114	122	144	-	CCC AAAAAAAAAAAAGGATGTCA
+EXAMPLO05_115	123	145	-	CCA AAAAAAAAAAAGGATGTCAT
+
+	Analysis ended at 2019-01-29_18:49
+
+			Total running time: 0:00:04.340873.
+
+Selected Target sequences with Unique Hits:
+
+SeqName	PosStart	PosEnd	Sense	Sequence(with PAM)
+EXAMPLE01_005	259	281	+	TAATGTTTAATTTCACCGAA TGG
+EXAMPLE01_006	268	290	+	ATTTCACCGAATGGTATAGA TGG
+EXAMPLE02_010	14	36	+	CCAACGAAAGAAGATGATCA AGG
+EXAMPLE02_011	51	73	+	CTACGAAGAGACACACTAAG TGG
+EXAMPLE02_012	85	107	+	CCCCCCCCCCCAAAAGTGAT TGG
+EXAMPLE02_013	119	141	+	TTATGATGCTTCTCACCATA CGG
+EXAMPLE02_014	120	142	+	TATGATGCTTCTCACCATAC GGG
+EXAMPLE02_015	121	143	+	ATGATGCTTCTCACCATACG GGG
+EXAMPLE02_016	135	157	+	CATACGGGGAATACAATGTC TGG
+EXAMPLE02_017	141	163	+	GGGAATACAATGTCTGGACT AGG
+EXAMPLE02_018	142	164	+	GGAATACAATGTCTGGACTA GGG
+EXAMPLE02_019	145	167	+	ATACAATGTCTGGACTAGGG TGG
+EXAMPLE02_020	165	187	+	TGGCTTATCCGCAACTCTCA TGG
+EXAMPLE02_021	170	192	+	TATCCGCAACTCTCATGGCA CGG
+EXAMPLE02_022	176	198	+	CAACTCTCATGGCACGGTTT TGG
+EXAMPLE02_023	183	205	+	CATGGCACGGTTTTGGAATG CGG
+EXAMPLE02_024	188	210	+	CACGGTTTTGGAATGCGGTA TGG
+EXAMPLE02_025	189	211	+	ACGGTTTTGGAATGCGGTAT GGG
+EXAMPLE02_026	190	212	+	CGGTTTTGGAATGCGGTATG GGG
+EXAMPLE02_027	201	223	+	TGCGGTATGGGGTAGTTTCA AGG
+EXAMPLE02_028	14	36	-	CCA ACGAAAGAAGATGATCAAGG
+EXAMPLE02_029	50	72	-	CCT ACGAAGAGACACACTAAGTG
+EXAMPLE02_036	82	104	-	CCC CCCCCCCCCCCAAAAGTGAT
+EXAMPLE02_037	83	105	-	CCC CCCCCCCCCCAAAAGTGATT
+EXAMPLE02_038	84	106	-	CCC CCCCCCCCCAAAAGTGATTG
+EXAMPLE02_039	85	107	-	CCC CCCCCCCCAAAAGTGATTGG
+EXAMPLE02_040	86	108	-	CCC CCCCCCCAAAAGTGATTGGC
+EXAMPLE02_041	87	109	-	CCC CCCCCCAAAAGTGATTGGCT
+EXAMPLE02_042	88	110	-	CCC CCCCCAAAAGTGATTGGCTA
+EXAMPLE02_043	89	111	-	CCC CCCCAAAAGTGATTGGCTAA
+EXAMPLE02_044	90	112	-	CCC CCCAAAAGTGATTGGCTAAA
+EXAMPLE02_045	91	113	-	CCC CCAAAAGTGATTGGCTAAAG
+EXAMPLE02_046	92	114	-	CCC CAAAAGTGATTGGCTAAAGT
+EXAMPLE02_047	93	115	-	CCC AAAAGTGATTGGCTAAAGTG
+EXAMPLE02_048	94	116	-	CCA AAAGTGATTGGCTAAAGTGC
+EXAMPLE02_049	134	156	-	CCA TACGGGGAATACAATGTCTG
+EXAMPLE02_050	173	195	-	CCG CAACTCTCATGGCACGGTTT
+EXAMPLE03_051	16	38	+	TTTCTATAGATTAGAAGAAC CGG
+EXAMPLE03_052	30	52	+	AAGAACCGGAACAAGCCCAT TGG
+EXAMPLE03_053	43	65	+	AGCCCATTGGCAACAGTATC CGG
+EXAMPLE03_054	68	90	+	TGATTATAACATTGCAGTAG TGG
+EXAMPLE03_058	118	140	+	CATCGAGTTTAAATGTGTGG TGG
+EXAMPLE03_066	349	371	+	TCTATATACAACAGATTAAA TGG
+EXAMPLE03_067	35	57	-	CCG GAACAAGCCCATTGGCAACA
+EXAMPLE03_068	45	67	-	CCC ATTGGCAACAGTATCCGGTA
+EXAMPLE03_069	46	68	-	CCA TTGGCAACAGTATCCGGTAT
+EXAMPLE03_070	62	84	-	CCG GTATGATTATAACATTGCAG
+EXAMPLE04_082	39	61	+	ACCTTATTATATATCTTTTT AGG
+EXAMPLE04_083	40	62	+	CCTTATTATATATCTTTTTA GGG
+EXAMPLE04_084	41	63	+	CTTATTATATATCTTTTTAG GGG
+EXAMPLE04_085	42	64	+	TTATTATATATCTTTTTAGG GGG
+EXAMPLE04_086	46	68	+	TATATATCTTTTTAGGGGGT CGG
+EXAMPLE04_087	74	96	+	TATTACGTACAACCTTTTGT TGG
+EXAMPLE04_088	167	189	+	ATATATATTAAACACACATT TGG
+EXAMPLE04_089	190	212	+	TAGTAGCAAACTTGTCGCTT TGG
+EXAMPLE04_090	338	360	+	TCTTACATACCACTTTGAAA AGG
+EXAMPLE04_091	339	361	+	CTTACATACCACTTTGAAAA GGG
+EXAMPLE04_092	346	368	+	ACCACTTTGAAAAGGGATCG AGG
+EXAMPLE04_093	11	33	-	CCC ATCAATTTCAGATCCCTCGC
+EXAMPLE04_094	12	34	-	CCA TCAATTTCAGATCCCTCGCT
+EXAMPLE04_095	27	49	-	CCC TCGCTCTCCACCTTATTATA
+EXAMPLE04_096	28	50	-	CCT CGCTCTCCACCTTATTATAT
+EXAMPLE04_097	37	59	-	CCA CCTTATTATATATCTTTTTA
+EXAMPLE04_098	40	62	-	CCT TATTATATATCTTTTTAGGG
+EXAMPLE04_099	86	108	-	CCT TTTGTTGGTATACTCCTCTT
+EXAMPLE04_101	129	151	-	CCG TATACTCATTTTCTCAAATT
+EXAMPLE04_102	254	276	-	CCC TTATTAATATGATTGAACAA
+EXAMPLE04_103	255	277	-	CCT TATTAATATGATTGAACAAA
+EXAMPLE04_104	347	369	-	CCA CTTTGAAAAGGGATCGAGGA
+EXAMPLO05_106	133	155	+	AAAAGGATGTCATAATATAT TGG
+EXAMPLO05_107	134	156	+	AAAGGATGTCATAATATATT GGG
+EXAMPLO05_108	182	204	+	TTTTCATGATTAAAACTTTG TGG
+EXAMPLO05_109	200	222	+	TGTGGCTTGCAAACTATATT TGG
+EXAMPLO05_110	201	223	+	GTGGCTTGCAAACTATATTT GGG
+EXAMPLO05_111	74	96	-	CCC CATATTTTTGATGTTGTACT
+EXAMPLO05_112	75	97	-	CCC ATATTTTTGATGTTGTACTG
+EXAMPLO05_113	76	98	-	CCA TATTTTTGATGTTGTACTGT
+EXAMPLO05_114	122	144	-	CCC AAAAAAAAAAAAGGATGTCA
+EXAMPLO05_115	123	145	-	CCA AAAAAAAAAAAGGATGTCAT
+
+Selected Target sequences with ALL hits:
+========================================
+
+<<< TARGET EXAMPLE01_001 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	95	117	+	AATATTTAATTTCACCGAAC TGG	(CCA GTTCGGTGAAATTAAATATT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig2_2	7783	7805	+	AATATTTAATTTCACCGAAC TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig2_2	7618	7640	+	AATGTTTAATTACACCGAAC TGG	***G*******A******** ***	2	   NGG
+
+
+<<< TARGET EXAMPLE01_002 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	104	126	+	TTTCACCGAACTGGATTAGA TGG	(CCA TCTAATCCAGTTCGGTGAAA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig2_2	7792	7814	+	TTTCACCGAACTGGATTAGA TGG	******************** ***	0	   NGG
+Contig2_2	7627	7649	+	TTACACCGAACTGGATTAGA TGG	**A***************** ***	1	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE01_003 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	112	134	+	AACTGGATTAGATGGTATAA TGG	(CCA TTATACCATCTAATCCAGTT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig2_2	7635	7657	+	AACTGGATTAGATGGTATAA TGG	******************** ***	0	   NGG
+Contig2_2	7800	7822	+	AACTGGATTAGATGGTATAA TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE01_004 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	113	135	+	ACTGGATTAGATGGTATAAT GGG	(CCC ATTATACCATCTAATCCAGT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig2_2	7636	7658	+	ACTGGATTAGATGGTATAAT GGG	******************** ***	0	   NGG
+Contig2_2	7801	7823	+	ACTGGATTAGATGGTATAAT GGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE01_005 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	259	281	+	TAATGTTTAATTTCACCGAA TGG	(CCA TTCGGTGAAATTAAACATTA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig2_2	7947	7969	+	TAATGTTTAATTTCACCGAA TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE01_006 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	268	290	+	ATTTCACCGAATGGTATAGA TGG	(CCA TCTATACCATTCGGTGAAAT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig2_2	7956	7978	+	ATTTCACCGAATGGTATAGA TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE01_007 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	13	35	-	CCA TTTGAAAGAAAACTTTTTAA	(TTAAAAAGTTTTCTTTCAAA TGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig2_2	7701	7723	-	CCA TTTGAAAGAAAACTTTTTAA	*** ********************	0	   NGG
+Contig2_2	7866	7888	-	CCA TTTGAAAGAAAACTTTTTAA	*** ********************	0	   NGG
+Contig3_3	51	73	-	CCA TTTGAAAGAAAACTTTTATA	*** *****************AT*	2	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE01_008 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	109	131	-	CCG AACTGGATTAGATGGTATAA	(TTATACCATCTAATCCAGTT CGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig2_2	7632	7654	-	CCG AACTGGATTAGATGGTATAA	*** ********************	0	   NGG
+Contig2_2	7797	7819	-	CCG AACTGGATTAGATGGTATAA	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE01_009 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	178	200	-	CCA TTTGAAAGAAAACTTTTTAA	(TTAAAAAGTTTTCTTTCAAA TGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig2_2	7701	7723	-	CCA TTTGAAAGAAAACTTTTTAA	*** ********************	0	   NGG
+Contig2_2	7866	7888	-	CCA TTTGAAAGAAAACTTTTTAA	*** ********************	0	   NGG
+Contig3_3	51	73	-	CCA TTTGAAAGAAAACTTTTATA	*** *****************AT*	2	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_010 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	14	36	+	CCAACGAAAGAAGATGATCA AGG	(CCT TGATCATCTTCTTTCGTTGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1750	1772	+	CCAACGAAAGAAGATGATCA AGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_011 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	51	73	+	CTACGAAGAGACACACTAAG TGG	(CCA CTTAGTGTGTCTCTTCGTAG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1787	1809	+	CTACGAAGAGACACACTAAG TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_012 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	85	107	+	CCCCCCCCCCCAAAAGTGAT TGG	(CCA ATCACTTTTGGGGGGGGGGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1821	1843	+	CCCCCCCCCCCAAAAGTGAT TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_013 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	119	141	+	TTATGATGCTTCTCACCATA CGG	(CCG TATGGTGAGAAGCATCATAA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1855	1877	+	TTATGATGCTTCTCACCATA CGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_014 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	120	142	+	TATGATGCTTCTCACCATAC GGG	(CCC GTATGGTGAGAAGCATCATA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1856	1878	+	TATGATGCTTCTCACCATAC GGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_015 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	121	143	+	ATGATGCTTCTCACCATACG GGG	(CCC CGTATGGTGAGAAGCATCAT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1857	1879	+	ATGATGCTTCTCACCATACG GGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_016 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	135	157	+	CATACGGGGAATACAATGTC TGG	(CCA GACATTGTATTCCCCGTATG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1871	1893	+	CATACGGGGAATACAATGTC TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_017 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	141	163	+	GGGAATACAATGTCTGGACT AGG	(CCT AGTCCAGACATTGTATTCCC)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1877	1899	+	GGGAATACAATGTCTGGACT AGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_018 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	142	164	+	GGAATACAATGTCTGGACTA GGG	(CCC TAGTCCAGACATTGTATTCC)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1878	1900	+	GGAATACAATGTCTGGACTA GGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_019 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	145	167	+	ATACAATGTCTGGACTAGGG TGG	(CCA CCCTAGTCCAGACATTGTAT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1881	1903	+	ATACAATGTCTGGACTAGGG TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_020 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	165	187	+	TGGCTTATCCGCAACTCTCA TGG	(CCA TGAGAGTTGCGGATAAGCCA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1901	1923	+	TGGCTTATCCGCAACTCTCA TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_021 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	170	192	+	TATCCGCAACTCTCATGGCA CGG	(CCG TGCCATGAGAGTTGCGGATA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1906	1928	+	TATCCGCAACTCTCATGGCA CGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_022 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	176	198	+	CAACTCTCATGGCACGGTTT TGG	(CCA AAACCGTGCCATGAGAGTTG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1912	1934	+	CAACTCTCATGGCACGGTTT TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_023 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	183	205	+	CATGGCACGGTTTTGGAATG CGG	(CCG CATTCCAAAACCGTGCCATG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1919	1941	+	CATGGCACGGTTTTGGAATG CGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_024 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	188	210	+	CACGGTTTTGGAATGCGGTA TGG	(CCA TACCGCATTCCAAAACCGTG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1924	1946	+	CACGGTTTTGGAATGCGGTA TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_025 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	189	211	+	ACGGTTTTGGAATGCGGTAT GGG	(CCC ATACCGCATTCCAAAACCGT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1925	1947	+	ACGGTTTTGGAATGCGGTAT GGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_026 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	190	212	+	CGGTTTTGGAATGCGGTATG GGG	(CCC CATACCGCATTCCAAAACCG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1926	1948	+	CGGTTTTGGAATGCGGTATG GGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_027 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	201	223	+	TGCGGTATGGGGTAGTTTCA AGG	(CCT TGAAACTACCCCATACCGCA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1937	1959	+	TGCGGTATGGGGTAGTTTCA AGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_028 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	14	36	-	CCA ACGAAAGAAGATGATCAAGG	(CCTTGATCATCTTCTTTCGT TGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1750	1772	-	CCA ACGAAAGAAGATGATCAAGG	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_029 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	50	72	-	CCT ACGAAGAGACACACTAAGTG	(CACTTAGTGTGTCTCTTCGT AGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1786	1808	-	CCT ACGAAGAGACACACTAAGTG	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_030 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	76	98	-	CCC CCCCCCCCCCCCCCCCCAAA	(TTTGGGGGGGGGGGGGGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1812	1834	-	CCC CCCCCCCCCCCCCCCCCAAA	*** ********************	0	   NGG
+Contig1_1	1813	1835	-	CCC CCCCCCCCCCCCCCCCAAAA	*** ****************A***	1	   NGG
+Contig1_1	1814	1836	-	CCC CCCCCCCCCCCCCCCAAAAG	*** ***************AA**G	3	   NGG
+Contig1_1	1815	1837	-	CCC CCCCCCCCCCCCCCAAAAGT	*** **************AAA*GT	5	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_031 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	77	99	-	CCC CCCCCCCCCCCCCCCCAAAA	(TTTTGGGGGGGGGGGGGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1813	1835	-	CCC CCCCCCCCCCCCCCCCAAAA	*** ********************	0	   NGG
+Contig1_1	1812	1834	-	CCC CCCCCCCCCCCCCCCCCAAA	*** ****************C***	1	   NGG
+Contig1_1	1814	1836	-	CCC CCCCCCCCCCCCCCCAAAAG	*** ***************A***G	2	   NGG
+Contig1_1	1815	1837	-	CCC CCCCCCCCCCCCCCAAAAGT	*** **************AA**GT	4	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_032 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	78	100	-	CCC CCCCCCCCCCCCCCCAAAAG	(CTTTTGGGGGGGGGGGGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1814	1836	-	CCC CCCCCCCCCCCCCCCAAAAG	*** ********************	0	   NGG
+Contig1_1	1813	1835	-	CCC CCCCCCCCCCCCCCCCAAAA	*** ***************C***A	2	   NGG
+Contig1_1	1812	1834	-	CCC CCCCCCCCCCCCCCCCCAAA	*** ***************CC**A	3	   NGG
+Contig1_1	1815	1837	-	CCC CCCCCCCCCCCCCCAAAAGT	*** **************A***GT	3	   NGG
+Contig1_1	1816	1838	-	CCC CCCCCCCCCCCCCAAAAGTG	*** *************AA**GT*	4	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_033 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	79	101	-	CCC CCCCCCCCCCCCCCAAAAGT	(ACTTTTGGGGGGGGGGGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1815	1837	-	CCC CCCCCCCCCCCCCCAAAAGT	*** ********************	0	   NGG
+Contig1_1	1814	1836	-	CCC CCCCCCCCCCCCCCCAAAAG	*** **************C***AG	3	   NGG
+Contig1_1	1813	1835	-	CCC CCCCCCCCCCCCCCCCAAAA	*** **************CC**AA	4	   NGG
+Contig1_1	1816	1838	-	CCC CCCCCCCCCCCCCAAAAGTG	*** *************A***GTG	4	   NGG
+Contig1_1	1812	1834	-	CCC CCCCCCCCCCCCCCCCCAAA	*** **************CCC*AA	5	   NGG
+Contig1_1	1817	1839	-	CCC CCCCCCCCCCCCAAAAGTGA	*** ************AA**GT*A	5	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_034 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	80	102	-	CCC CCCCCCCCCCCCCAAAAGTG	(CACTTTTGGGGGGGGGGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1816	1838	-	CCC CCCCCCCCCCCCCAAAAGTG	*** ********************	0	   NGG
+Contig1_1	1814	1836	-	CCC CCCCCCCCCCCCCCCAAAAG	*** *************CC**AA*	4	   NGG
+Contig1_1	1815	1837	-	CCC CCCCCCCCCCCCCCAAAAGT	*** *************C***AGT	4	   NGG
+Contig1_1	1817	1839	-	CCC CCCCCCCCCCCCAAAAGTGA	*** ************A***GTGA	5	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_035 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	81	103	-	CCC CCCCCCCCCCCCAAAAGTGA	(TCACTTTTGGGGGGGGGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1817	1839	-	CCC CCCCCCCCCCCCAAAAGTGA	*** ********************	0	   NGG
+Contig1_1	1815	1837	-	CCC CCCCCCCCCCCCCCAAAAGT	*** ************CC**AA*T	5	   NGG
+Contig1_1	1816	1838	-	CCC CCCCCCCCCCCCCAAAAGTG	*** ************C***AGTG	5	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_036 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	82	104	-	CCC CCCCCCCCCCCAAAAGTGAT	(ATCACTTTTGGGGGGGGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1818	1840	-	CCC CCCCCCCCCCCAAAAGTGAT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_037 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	83	105	-	CCC CCCCCCCCCCAAAAGTGATT	(AATCACTTTTGGGGGGGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1819	1841	-	CCC CCCCCCCCCCAAAAGTGATT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_038 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	84	106	-	CCC CCCCCCCCCAAAAGTGATTG	(CAATCACTTTTGGGGGGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1820	1842	-	CCC CCCCCCCCCAAAAGTGATTG	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_039 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	85	107	-	CCC CCCCCCCCAAAAGTGATTGG	(CCAATCACTTTTGGGGGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1821	1843	-	CCC CCCCCCCCAAAAGTGATTGG	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_040 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	86	108	-	CCC CCCCCCCAAAAGTGATTGGC	(GCCAATCACTTTTGGGGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1822	1844	-	CCC CCCCCCCAAAAGTGATTGGC	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_041 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	87	109	-	CCC CCCCCCAAAAGTGATTGGCT	(AGCCAATCACTTTTGGGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1823	1845	-	CCC CCCCCCAAAAGTGATTGGCT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_042 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	88	110	-	CCC CCCCCAAAAGTGATTGGCTA	(TAGCCAATCACTTTTGGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1824	1846	-	CCC CCCCCAAAAGTGATTGGCTA	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_043 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	89	111	-	CCC CCCCAAAAGTGATTGGCTAA	(TTAGCCAATCACTTTTGGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1825	1847	-	CCC CCCCAAAAGTGATTGGCTAA	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_044 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	90	112	-	CCC CCCAAAAGTGATTGGCTAAA	(TTTAGCCAATCACTTTTGGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1826	1848	-	CCC CCCAAAAGTGATTGGCTAAA	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_045 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	91	113	-	CCC CCAAAAGTGATTGGCTAAAG	(CTTTAGCCAATCACTTTTGG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1827	1849	-	CCC CCAAAAGTGATTGGCTAAAG	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_046 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	92	114	-	CCC CAAAAGTGATTGGCTAAAGT	(ACTTTAGCCAATCACTTTTG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1828	1850	-	CCC CAAAAGTGATTGGCTAAAGT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_047 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	93	115	-	CCC AAAAGTGATTGGCTAAAGTG	(CACTTTAGCCAATCACTTTT GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1829	1851	-	CCC AAAAGTGATTGGCTAAAGTG	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_048 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	94	116	-	CCA AAAGTGATTGGCTAAAGTGC	(GCACTTTAGCCAATCACTTT TGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1830	1852	-	CCA AAAGTGATTGGCTAAAGTGC	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_049 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	134	156	-	CCA TACGGGGAATACAATGTCTG	(CAGACATTGTATTCCCCGTA TGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1870	1892	-	CCA TACGGGGAATACAATGTCTG	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE02_050 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	173	195	-	CCG CAACTCTCATGGCACGGTTT	(AAACCGTGCCATGAGAGTTG CGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig1_1	1909	1931	-	CCG CAACTCTCATGGCACGGTTT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_051 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	16	38	+	TTTCTATAGATTAGAAGAAC CGG	(CCG GTTCTTCTAATCTATAGAAA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	3984	4006	+	TTTCTATAGATTAGAAGAAC CGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_052 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	30	52	+	AAGAACCGGAACAAGCCCAT TGG	(CCA ATGGGCTTGTTCCGGTTCTT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	3998	4020	+	AAGAACCGGAACAAGCCCAT TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_053 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	43	65	+	AGCCCATTGGCAACAGTATC CGG	(CCG GATACTGTTGCCAATGGGCT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4011	4033	+	AGCCCATTGGCAACAGTATC CGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_054 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	68	90	+	TGATTATAACATTGCAGTAG TGG	(CCA CTACTGCAATGTTATAATCA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4036	4058	+	TGATTATAACATTGCAGTAG TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_055 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	78	100	+	ATTGCAGTAGTGGTATGTCT TGG	(CCA AGACATACCACTACTGCAAT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4046	4068	+	ATTGCAGTAGTGGTATGTCT TGG	******************** ***	0	   NGG
+Contig4_4	7360	7382	+	ATTGCAGGAGTGGTATGTCT TGG	*******G************ ***	1	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_056 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	88	110	+	TGGTATGTCTTGGAGAATCG AGG	(CCT CGATTCTCCAAGACATACCA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4056	4078	+	TGGTATGTCTTGGAGAATCG AGG	******************** ***	0	   NGG
+Contig4_4	7370	7392	+	TGGTATGTCTTGGAGAATCG AGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_057 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	115	137	+	ACTCATCGAGTTTAAATGTG TGG	(CCA CACATTTAAACTCGATGAGT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4083	4105	+	ACTCATCGAGTTTAAATGTG TGG	******************** ***	0	   NGG
+Contig4_4	7397	7419	+	ACGCATCGAGTTTAAATGTG TGG	**G***************** ***	1	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_058 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	118	140	+	CATCGAGTTTAAATGTGTGG TGG	(CCA CCACACATTTAAACTCGATG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4086	4108	+	CATCGAGTTTAAATGTGTGG TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_059 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	157	179	+	CAGATTTACTTAAAGAGTGA AGG	(CCT TCACTCTTTAAGTAAATCTG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4125	4147	+	CAGATTTACTTAAAGAGTGA AGG	******************** ***	0	   NGG
+Contig4_4	7442	7464	+	CAGATTTGCTTAAAGAGTGA AGG	*******G************ ***	1	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_060 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	158	180	+	AGATTTACTTAAAGAGTGAA GGG	(CCC TTCACTCTTTAAGTAAATCT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4126	4148	+	AGATTTACTTAAAGAGTGAA GGG	******************** ***	0	   NGG
+Contig4_4	7443	7465	+	AGATTTGCTTAAAGAGTGAA GGG	******G************* ***	1	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_061 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	162	184	+	TTACTTAAAGAGTGAAGGGA AGG	(CCT TCCCTTCACTCTTTAAGTAA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4130	4152	+	TTACTTAAAGAGTGAAGGGA AGG	******************** ***	0	   NGG
+Contig4_4	7447	7469	+	TTGCTTAAAGAGTGAAGGGA AGG	**G***************** ***	1	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_062 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	176	198	+	AAGGGAAGGTGCTATAAAAA AGG	(CCT TTTTTATAGCACCTTCCCTT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4144	4166	+	AAGGGAAGGTGCTATAAAAA AGG	******************** ***	0	   NGG
+Contig4_4	7461	7483	+	AAGGGAAGGTGCTATAAAAA AGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_063 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	186	208	+	GCTATAAAAAAGGATCTTGT TGG	(CCA ACAAGATCCTTTTTTATAGC)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4154	4176	+	GCTATAAAAAAGGATCTTGT TGG	******************** ***	0	   NGG
+Contig4_4	7471	7493	+	GCTATAAAAAAGGATCTTGT TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_064 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	229	251	+	GTCTTCTCCGCCGCACCCTT TGG	(CCA AAGGGTGCGGCGGAGAAGAC)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4197	4219	+	GTCTTCTCCGCCGCACCCTT TGG	******************** ***	0	   NGG
+Contig4_4	7514	7536	+	GTCTTCTCCGCCGCACCCTT TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_065 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	230	252	+	TCTTCTCCGCCGCACCCTTT GGG	(CCC AAAGGGTGCGGCGGAGAAGA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4198	4220	+	TCTTCTCCGCCGCACCCTTT GGG	******************** ***	0	   NGG
+Contig4_4	7515	7537	+	TCTTCTCCGCCGCACCCTTT GGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_066 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	349	371	+	TCTATATACAACAGATTAAA TGG	(CCA TTTAATCTGTTGTATATAGA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4317	4339	+	TCTATATACAACAGATTAAA TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_067 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	35	57	-	CCG GAACAAGCCCATTGGCAACA	(TGTTGCCAATGGGCTTGTTC CGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4003	4025	-	CCG GAACAAGCCCATTGGCAACA	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_068 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	45	67	-	CCC ATTGGCAACAGTATCCGGTA	(TACCGGATACTGTTGCCAAT GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4013	4035	-	CCC ATTGGCAACAGTATCCGGTA	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_069 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	46	68	-	CCA TTGGCAACAGTATCCGGTAT	(ATACCGGATACTGTTGCCAA TGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4014	4036	-	CCA TTGGCAACAGTATCCGGTAT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_070 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	62	84	-	CCG GTATGATTATAACATTGCAG	(CTGCAATGTTATAATCATAC CGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4030	4052	-	CCG GTATGATTATAACATTGCAG	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_071 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	209	231	-	CCA CGAGCTTCTTCCTTTTCGTC	(GACGAAAAGGAAGAAGCTCG TGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4177	4199	-	CCA CGAGCTTCTTCCTTTTCGTC	*** ********************	0	   NGG
+Contig4_4	7494	7516	-	CCA CGAGCTTCTTCCTTTTCGTC	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_072 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	222	244	-	CCT TTTCGTCTTCTCCGCCGCAC	(GTGCGGCGGAGAAGACGAAA AGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4190	4212	-	CCT TTTCGTCTTCTCCGCCGCAC	*** ********************	0	   NGG
+Contig4_4	7507	7529	-	CCT TTTCGTCTTCTCCGCCGCAC	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_073 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	236	258	-	CCG CCGCACCCTTTGGGTCAACA	(TGTTGACCCAAAGGGTGCGG CGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4204	4226	-	CCG CCGCACCCTTTGGGTCAACA	*** ********************	0	   NGG
+Contig4_4	7521	7543	-	CCG CCGCACCCTTTGGGTCAACA	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_074 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	239	261	-	CCG CACCCTTTGGGTCAACAGTT	(AACTGTTGACCCAAAGGGTG CGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4207	4229	-	CCG CACCCTTTGGGTCAACAGTT	*** ********************	0	   NGG
+Contig4_4	7524	7546	-	CCG CACCCTTTGGGTCAACAGTT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_075 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	244	266	-	CCC TTTGGGTCAACAGTTAAACC	(GGTTTAACTGTTGACCCAAA GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4212	4234	-	CCC TTTGGGTCAACAGTTAAACC	*** ********************	0	   NGG
+Contig4_4	7529	7551	-	CCC TTTGGGTCAACAGTTAAACC	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_076 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	245	267	-	CCT TTGGGTCAACAGTTAAACCC	(GGGTTTAACTGTTGACCCAA AGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4213	4235	-	CCT TTGGGTCAACAGTTAAACCC	*** ********************	0	   NGG
+Contig4_4	7530	7552	-	CCT TTGGGTCAACAGTTAAACCC	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_077 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	265	287	-	CCC TCTCCATTACGCGTGTGAGT	(ACTCACACGCGTAATGGAGA GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4233	4255	-	CCC TCTCCATTACGCGTGTGAGT	*** ********************	0	   NGG
+Contig4_4	7550	7572	-	CCC TCTCCATTACGCGTGTGAAT	*** ******************A*	1	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_078 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	266	288	-	CCT CTCCATTACGCGTGTGAGTA	(TACTCACACGCGTAATGGAG AGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4234	4256	-	CCT CTCCATTACGCGTGTGAGTA	*** ********************	0	   NGG
+Contig4_4	7551	7573	-	CCT CTCCATTACGCGTGTGAATA	*** *****************A**	1	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_079 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	271	293	-	CCA TTACGCGTGTGAGTATACAC	(GTGTATACTCACACGCGTAA TGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4239	4261	-	CCA TTACGCGTGTGAGTATACAC	*** ********************	0	   NGG
+Contig4_4	7556	7578	-	CCA TTACGCGTGTGAATATACAC	*** ************A*******	1	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_080 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	340	362	-	CCT GCCTGTTCTATATACAACAG	(CTGTTGTATATAGAACAGGC AGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4308	4330	-	CCT GCCTGTTCTATATACAACAG	*** ********************	0	   NGG
+Contig4_4	7623	7645	-	CCT GCCTGTTCTATATACAACAG	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE03_081 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	344	366	-	CCT GTTCTATATACAACAGATTA	(TAATCTGTTGTATATAGAAC AGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig4_4	4312	4334	-	CCT GTTCTATATACAACAGATTA	*** ********************	0	   NGG
+Contig4_4	7627	7649	-	CCT GTTCTATATACAACAGGTTT	*** ****************G**T	2	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_082 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	39	61	+	ACCTTATTATATATCTTTTT AGG	(CCT AAAAAGATATATAATAAGGT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6115	6137	+	ACCTTATTATATATCTTTTT AGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_083 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	40	62	+	CCTTATTATATATCTTTTTA GGG	(CCC TAAAAAGATATATAATAAGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6116	6138	+	CCTTATTATATATCTTTTTA GGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_084 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	41	63	+	CTTATTATATATCTTTTTAG GGG	(CCC CTAAAAAGATATATAATAAG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6117	6139	+	CTTATTATATATCTTTTTAG GGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_085 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	42	64	+	TTATTATATATCTTTTTAGG GGG	(CCC CCTAAAAAGATATATAATAA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6118	6140	+	TTATTATATATCTTTTTAGG GGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_086 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	46	68	+	TATATATCTTTTTAGGGGGT CGG	(CCG ACCCCCTAAAAAGATATATA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6122	6144	+	TATATATCTTTTTAGGGGGT CGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_087 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	74	96	+	TATTACGTACAACCTTTTGT TGG	(CCA ACAAAAGGTTGTACGTAATA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6150	6172	+	TATTACGTACAACCTTTTGT TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_088 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	167	189	+	ATATATATTAAACACACATT TGG	(CCA AATGTGTGTTTAATATATAT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6243	6265	+	ATATATATTAAACACACATT TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_089 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	190	212	+	TAGTAGCAAACTTGTCGCTT TGG	(CCA AAGCGACAAGTTTGCTACTA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6266	6288	+	TAGTAGCAAACTTGTCGCTT TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_090 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	338	360	+	TCTTACATACCACTTTGAAA AGG	(CCT TTTCAAAGTGGTATGTAAGA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6414	6436	+	TCTTACATACCACTTTGAAA AGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_091 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	339	361	+	CTTACATACCACTTTGAAAA GGG	(CCC TTTTCAAAGTGGTATGTAAG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6415	6437	+	CTTACATACCACTTTGAAAA GGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_092 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	346	368	+	ACCACTTTGAAAAGGGATCG AGG	(CCT CGATCCCTTTTCAAAGTGGT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6422	6444	+	ACCACTTTGAAAAGGGATCG AGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_093 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	11	33	-	CCC ATCAATTTCAGATCCCTCGC	(GCGAGGGATCTGAAATTGAT GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6087	6109	-	CCC ATCAATTTCAGATCCCTCGC	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_094 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	12	34	-	CCA TCAATTTCAGATCCCTCGCT	(AGCGAGGGATCTGAAATTGA TGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6088	6110	-	CCA TCAATTTCAGATCCCTCGCT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_095 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	27	49	-	CCC TCGCTCTCCACCTTATTATA	(TATAATAAGGTGGAGAGCGA GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6103	6125	-	CCC TCGCTCTCCACCTTATTATA	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_096 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	28	50	-	CCT CGCTCTCCACCTTATTATAT	(ATATAATAAGGTGGAGAGCG AGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6104	6126	-	CCT CGCTCTCCACCTTATTATAT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_097 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	37	59	-	CCA CCTTATTATATATCTTTTTA	(TAAAAAGATATATAATAAGG TGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6113	6135	-	CCA CCTTATTATATATCTTTTTA	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_098 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	40	62	-	CCT TATTATATATCTTTTTAGGG	(CCCTAAAAAGATATATAATA AGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6116	6138	-	CCT TATTATATATCTTTTTAGGG	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_099 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	86	108	-	CCT TTTGTTGGTATACTCCTCTT	(AAGAGGAGTATACCAACAAA AGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6162	6184	-	CCT TTTGTTGGTATACTCCTCTT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_100 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	103	125	-	CCT CTTCTTCTTCTTCTTTTGTG	(CACAAAAGAAGAAGAAGAAG AGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6179	6201	-	CCT CTTCTTCTTCTTCTTTTGTG	*** ********************	0	   NGG
+Contig5_5	7100	7122	-	CTT CTTCTTCTTCTTCTTTGAGG	*T* ****************GAG*	3	   NAG
+Contig8_8	2293	2315	-	CTT CTTCTTCTTCTTCTTCTTCG	*T* ***************C*TC*	3	   NAG
+Contig8_8	2296	2318	-	CTT CTTCTTCTTCTTCTTCGTTG	*T* ***************CGT**	3	   NAG
+Contig8_8	2299	2321	-	CTT CTTCTTCTTCTTCGTTGTTG	*T* *************G**GT**	3	   NAG
+Contig9_9	6558	6580	+	TTCATAATAAGAAGAAGAAG AAG	TT**T**T************ *A*	4	   NAG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_101 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	129	151	-	CCG TATACTCATTTTCTCAAATT	(AATTTGAGAAAATGAGTATA CGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6205	6227	-	CCG TATACTCATTTTCTCAAATT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_102 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	254	276	-	CCC TTATTAATATGATTGAACAA	(TTGTTCAATCATATTAATAA GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6330	6352	-	CCC TTATTAATATGATTGAACAA	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_103 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	255	277	-	CCT TATTAATATGATTGAACAAA	(TTTGTTCAATCATATTAATA AGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6331	6353	-	CCT TATTAATATGATTGAACAAA	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLE04_104 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	347	369	-	CCA CTTTGAAAAGGGATCGAGGA	(TCCTCGATCCCTTTTCAAAG TGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig7_7	6423	6445	-	CCA CTTTGAAAAGGGATCGAGGA	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLO05_105 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	116	138	+	TACTTGCCCAAAAAAAAAAA AGG	(CCT TTTTTTTTTTTGGGCAAGTA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig8_8	2720	2742	+	TACTTGCCCAAAAAAAAAAA AGG	******************** ***	0	   NGG
+Contig10_10	2898	2920	-	CTT TTTTTTTTTTTTACCAACTA	*T* ***********TAC***C**	4	   NAG
+Contig9_9	7842	7864	+	TTCTTTAAGAAAAAAAAAAA AGG	*T***TAAG*********** ***	5	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLO05_106 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	133	155	+	AAAAGGATGTCATAATATAT TGG	(CCA ATATATTATGACATCCTTTT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig8_8	2737	2759	+	AAAAGGATGTCATAATATAT TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLO05_107 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	134	156	+	AAAGGATGTCATAATATATT GGG	(CCC AATATATTATGACATCCTTT)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig8_8	2738	2760	+	AAAGGATGTCATAATATATT GGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLO05_108 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	182	204	+	TTTTCATGATTAAAACTTTG TGG	(CCA CAAAGTTTTAATCATGAAAA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig8_8	2786	2808	+	TTTTCATGATTAAAACTTTG TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLO05_109 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	200	222	+	TGTGGCTTGCAAACTATATT TGG	(CCA AATATAGTTTGCAAGCCACA)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig8_8	2804	2826	+	TGTGGCTTGCAAACTATATT TGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLO05_110 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	201	223	+	GTGGCTTGCAAACTATATTT GGG	(CCC AAATATAGTTTGCAAGCCAC)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig8_8	2805	2827	+	GTGGCTTGCAAACTATATTT GGG	******************** ***	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLO05_111 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	74	96	-	CCC CATATTTTTGATGTTGTACT	(AGTACAACATCAAAAATATG GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig8_8	2678	2700	-	CCC CATATTTTTGATGTTGTACT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLO05_112 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	75	97	-	CCC ATATTTTTGATGTTGTACTG	(CAGTACAACATCAAAAATAT GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig8_8	2679	2701	-	CCC ATATTTTTGATGTTGTACTG	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLO05_113 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	76	98	-	CCA TATTTTTGATGTTGTACTGT	(ACAGTACAACATCAAAAATA TGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig8_8	2680	2702	-	CCA TATTTTTGATGTTGTACTGT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLO05_114 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	122	144	-	CCC AAAAAAAAAAAAGGATGTCA	(TGACATCCTTTTTTTTTTTT GGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig8_8	2726	2748	-	CCC AAAAAAAAAAAAGGATGTCA	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
+<<< TARGET EXAMPLO05_115 >>>
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	123	145	-	CCA AAAAAAAAAAAGGATGTCAT	(ATGACATCCTTTTTTTTTTT TGG)
+
+<Hits with NO mismatch in Seed sequence (11 nt) and LESS than 6 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 5 global mismatches:
+
+>>>><<<<
+>>HITS<<
+>>>><<<<
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+Contig8_8	2727	2749	-	CCA AAAAAAAAAAAGGATGTCAT	*** ********************	0	   NGG
+
+
+
+<Hits with 1 mismatch in Seed sequence (11 nt) and LESS than 5 global mismatches.>
+--When the PAM of the hit is NAG selection is LESS than 4 global mismatches:
+
+		No HITS have been found with this condition.
+
