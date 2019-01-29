@@ -131,9 +131,9 @@ Based on Cas9 and Cas12a sequence affinity information ARES-GT algorithm uses tw
 
 
 
-  Bibliography
+ ### Bibliography
   
-  Swarts, D. C. and M. Jinek (2018). "Cas9 versus Cas12a/Cpf1: Structure–function comparisons and implications for genome editing." Wiley Interdisciplinary Reviews: RNA 9(5): e1481.
-  Swarts, D. C., J. van der Oost and M. Jinek (2017). "Structural Basis for Guide RNA Processing and Seed-Dependent DNA Targeting by CRISPR-Cas12a." Mol Cell 66(2): 221-233 e224.
-  Sternberg, S. H., S. Redding, M. Jinek, E. C. Greene and J. A. Doudna (2014). "DNA interrogation by the CRISPR RNA-guided endonuclease Cas9." Nature.
-  Hsu, P. D., D. A. Scott, J. A. Weinstein, F. A. Ran, S. Konermann, V. Agarwala, Y. Li, E. J. Fine, X. Wu, O. Shalem, T. J. Cradick, L. A. Marraffini, G. Bao and F. Zhang (2013). "DNA targeting specificity of RNA-guided Cas9 nucleases." Nat Biotechnol 31(9): 827-832.
+-  Swarts, D. C. and M. Jinek (2018). "Cas9 versus Cas12a/Cpf1: Structure–function comparisons and implications for genome editing." Wiley Interdisciplinary Reviews: RNA 9(5): e1481.
+-  Swarts, D. C., J. van der Oost and M. Jinek (2017). "Structural Basis for Guide RNA Processing and Seed-Dependent DNA Targeting by CRISPR-Cas12a." Mol Cell 66(2): 221-233 e224.
+-  Sternberg, S. H., S. Redding, M. Jinek, E. C. Greene and J. A. Doudna (2014). "DNA interrogation by the CRISPR RNA-guided endonuclease Cas9." Nature.
+-  Hsu, P. D., D. A. Scott, J. A. Weinstein, F. A. Ran, S. Konermann, V. Agarwala, Y. Li, E. J. Fine, X. Wu, O. Shalem, T. J. Cradick, L. A. Marraffini, G. Bao and F. Zhang (2013). "DNA targeting specificity of RNA-guided Cas9 nucleases." Nat Biotechnol 31(9): 827-832.
