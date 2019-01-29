@@ -1,8 +1,15 @@
 # ARES-GT
 CRISPR sgRNAs guide analysis software
 
-ARES-GT is a command line Python software for identification of CRISPR target in DNA sequences (Cas9 or Cas12a/Cpf1).
-It uses several python libraries: datetime, sys, re, regex.
+# Overview
+
+Although several online tools exist for identification of CRISPR targets, but usually only a limited list of genomes are available to be selected. Moreover, a limited list of candidates, based on a matrix score, is provided. I have developed ARES-GT to search CRISPR targets in DNA sequences against a reference genome provided by the user, meaning unpublished genome, unassembled, etc., can be used.
+
+# Installation
+
+ARES-GT is a python (v2.7) script that uses datetime, sys, re and regex libraries.
+
+# Input
 
 Three input files are needed:
 
