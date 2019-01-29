@@ -3,7 +3,9 @@ CRISPR sgRNAs guide analysis software
 
 # Overview
 
-Although several online tools exist for identification of CRISPR targets, but usually only a limited list of genomes are available to be selected. Moreover, a limited list of candidates, based on a matrix score, is provided. I have developed ARES-GT to search CRISPR targets in DNA sequences against a reference genome provided by the user, meaning unpublished genome, unassembled, etc., can be used.
+Although several online tools exist for identification of CRISPR targets (Cas9 or Cas12a/Cpf1), but usually only a limited list of genomes are available to be selected. Moreover, a limited list of candidates, based on a matrix score, is provided. I have developed ARES-GT to search CRISPR targets in DNA sequences against a reference genome provided by the user, meaning unpublished genome, unassembled, etc., can be used.
+
+ARES-GT is licensed under the GNU Affero General Public License v3.0
 
 # Installation
 
@@ -13,13 +15,31 @@ ARES-GT is a python (v2.7) script that uses datetime, sys, re and regex librarie
 
 Three input files are needed:
 
-  First: DNA sequences in fasta format in a text file.
+  * DNA sequences in FASTA format.
+  * Reference GENOME files (one file per chromosome/contig).
+  * LIST with the names of reference genome files.
   
-  Second: Reference sequences (Genome) in text files (one file per chromosome/contig). If all reference genome is in a unique file (in fasta format) the python script "SplitGenome.py" will split the file to generate one file per contig and also a file with the list of all new files (used to indicate ARES-GT which files contains reference genome).
+  Examples on input files are in "example" folder.
   
-    >>> Spliting chromosomes/contigs in files helps to reduce the memory use as in some species genome size can be really big.
+  ```
+  If all reference genome is in FASTA format file, SplitChrom.py script will split it in files
+  and will generate the list with the names of the files, ready to be used with ARES-GT:
+  
+  SplitChrom.py Genome.fas
     
-   Third: A text file that contains a list of all the files that contains genome chromosomes/contigs.
+  ```
+
+# Using ARES-GT
+
+  1.- Parameters
+  
+  * "f1" Precedes Name of the file with the DNA sequences in fasta format to be analysed searching for CRISPR targets.
+  * "f2" Precedes Name of the file that contains the list of files with the reference genome
+  * "L0" Precedes Threshold of global mismatches when number of mismatches in seed sequence in zero.
+  * "L1" Precedes Threshold of global mismatches when number of mismatches in seed sequence in one.
+  * "ENZ" Precedes identification of endonuclease to be used: Cas9 or Cas12a
+  * "NAG" Precedes "Yes" or "No", indicating is sequences with PAM "NAG" must be taken into account as possible off-targets 
+
 
 ARES-GT algorithm
 
@@ -39,14 +59,7 @@ Based on Cas9 and Cas12a sequence affinity information ARES-GT algorithm uses tw
   1) Any sequence with two or more mismatches in seed sequence is discarded.
   2) Any sequence with less mismatches (in all 20 nt target sequence) than a user defined threshold is selected as a possible off-target.
 
-Parameters in Command Line. An identifier precedes the value of the parameter, separated by a white space:
 
-  "f1" Precedes Name of the file with the DNA sequences in fasta format to be analysed searching for CRISPR targets.
-  "f2" Precedes Name of the file that contains the list of files with the reference genome
-  "L0" Precedes Threshold of global mismatches when number of mismatches in seed sequence in zero.
-  "L1" Precedes Threshold of global mismatches when number of mismatches in seed sequence in one.
-  "ENZ" Precedes identification of endonuclease to be used: Cas9 or Cas12a
-  "NAG" Precedes "Yes" or "No", indicating is sequences with PAM "NAG" must be taken into account as possible off-targets 
 
 Using low or high values for L0 and L1 has influence in the determination of the "optimal" candidates. High values increase the number of possible off-targets to be teaken into account, thus all optimal candidates would be very specific and with very low probability of off-target mutations, but it can also happens that no optimal candidates are detected with those parameters.
 
