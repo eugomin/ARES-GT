@@ -32,21 +32,21 @@ ARES-GT is a python (v2.7) script that uses datetime, sys, re and regex librarie
 
   Parameters
   
-  * "f1" Precedes Name of the file with the DNA sequences in fasta format to be analysed searching for CRISPR targets.
-  * "f2" Precedes Name of the file that contains the list of files with the reference genome
-  * "L0" Precedes Threshold of global mismatches when number of mismatches in seed sequence in zero.
-  * "L1" Precedes Threshold of global mismatches when number of mismatches in seed sequence in one.
-  * "ENZ" Precedes identification of endonuclease to be used: "Cas9" or "Cas12a"
-  * "NAG" Precedes "Yes" or "No", indicating is sequences with PAM "NAG" must be taken into account as possible off-targets 
+  * "-f1" Precedes Name of the file with the DNA sequences in fasta format to be analysed searching for CRISPR targets.
+  * "-f2" Precedes Name of the file that contains the list of files with the reference genome
+  * "-L0" Precedes Threshold of global mismatches when number of mismatches in seed sequence in zero.
+  * "-L1" Precedes Threshold of global mismatches when number of mismatches in seed sequence in one.
+  * "-ENZ" Precedes identification of endonuclease to be used: "Cas9" or "Cas12a"
+  * "-NAG" Precedes "Yes" or "No", indicating is sequences with PAM "NAG" must be taken into account as possible off-targets 
 
 ```
 Command line example:
 
-ARES_GT_V1.1.py f1 Sequences.txt f2 ChromList.txt L0 5 L1 4 ENZ Cas9 NAG No 
+ARES_GT_V1.1.py -f1 Sequences.txt -f2 ChromList.txt -L0 5 -L1 4 -ENZ Cas9 -NAG No 
 
-ARES_GT_V1.1.py f1 Sequences.txt f2 ChromList.txt L0 5 L1 4 ENZ Cas12a
+ARES_GT_V1.1.py -f1 Sequences.txt -f2 ChromList.txt -L0 5 -L1 4 -ENZ Cas12a
 
-ARES_GT_V1.1.py f1 Genes.txt f2 Contigs.txt L0 4 L1 2 ENZ Cas9 NAG Yes
+ARES_GT_V1.1.py -f1 Genes.txt -f2 Contigs.txt -L0 4 -L1 2 -ENZ Cas9 -NAG Yes
 ```
 
 ## Output
