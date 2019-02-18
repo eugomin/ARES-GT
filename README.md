@@ -1,4 +1,4 @@
-# ARES-GT
+# ARES-GT (version 1.2)
 CRISPR sgRNAs guide analysis software
 
 ## Overview
