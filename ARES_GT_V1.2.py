@@ -1,5 +1,5 @@
 ﻿#################################################################
-## Version 1.1                                                 ##
+## Version 1.2                                                 ##
 ## Copyright (c) 2018 Eugenio Gomez Minguet.                   ##
 ##                                                             ##
 ## Author : Eugenio Gómez Minguet                              ##
