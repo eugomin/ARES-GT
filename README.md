@@ -3,7 +3,7 @@ CRISPR sgRNAs guide analysis software
 
 ## Overview
 
-Although several online tools exist for identification of CRISPR targets (Cas9 or Cas12a/Cpf1), but usually only a limited list of genomes are available to be selected. Moreover, a limited list of candidates, based on a matrix score, is provided. I have developed ARES-GT to search CRISPR targets in DNA sequences against a reference genome provided by the user, meaning unpublished genome, unassembled, etc., can be used.
+Although several online tools exist for identification of CRISPR targets (Cas9 or Cas12a/Cpf1), usually only a limited list of genomes are available to be selected. Moreover, a limited list of candidates, based on a matrix score, is provided. I have developed ARES-GT to search CRISPR targets in DNA sequences against a reference genome provided by the user, meaning unpublished genome, unassembled, etc., can be used.
 
 ARES-GT is licensed under the GNU Affero General Public License v3.0
 
