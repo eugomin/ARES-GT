@@ -27,7 +27,7 @@ ARES-GT is a python (v2.7) script that uses datetime, sys, re and regex librarie
   and will generate the list with the names of the files, ready to be used with ARES-GT:
   
   Example:
-             SplitChrom.py Genome.fas
+             SplitChromV1.3.py Genome.fas
     
   ```
 
