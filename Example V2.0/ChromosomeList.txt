@@ -1,0 +1,14 @@
+ContigA.txt
+ContigB.txt
+ContigC.txt
+ContigD.txt
+Contig1.txt
+Contig2.txt
+Contig3.txt
+Contig4.txt
+Contig5.txt
+Contig6.txt
+Contig7.txt
+Contig8.txt
+Contig9.txt
+Contig10.txt
