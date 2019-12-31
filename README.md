@@ -1,3 +1,99 @@
+# ARES-GT (version 2.0)
+
+## Overview
+
+ARES-GT is a python script that identify CRISPR targets in query sequences (in FASTA format) and can also identify CRISPR targets matching multiple genes. Several online CRISPR tools exists with very good performance, however only a set of availables genomes can be selected (in some cases only a few, though in some tools more than 1500 can be selected) but none of them can identify sequences to be able to target multiple genes. This work usually needs manual (an slow) evaluation of alignments and offtargets.
+
+ARES-GT run locally thus user can provide any genome as reference: unpublished data, unassembled genomes in contigs, individuals genomes for personalized treatments, etc.
+
+ARES-GT also evaluates whether the possible CRISPR targets in any query sequence also match the other query sequences, so if a gene family is used, its algorithm will list those candidates that can target more than one members of the family.
+
+ARES-GT is licensed under the GNU Affero General Public License v3.0
+
+## Installation
+
+ARES-GT is a python (v2.7) script that uses datetime, sys, re and regex libraries.
+
+## Input
+
+  * DNA sequences in FASTA format.
+  * Reference GENOME files (one file per chromosome/contig).
+  * LIST with the names of reference genome files.
+  
+  Examples of input files are in "example" folder.
+  
+  ```
+  If all reference genome is in FASTA format file, SplitChrom.py script will split it in files
+  and will generate the list with the names of the files, ready to be used with ARES-GT:
+  
+  Example:
+             SplitChrom.py Genome.fas
+    
+  ```
+
+# Using ARES-GT (v2.0)
+
+
+  Parameters
+  
+  * "-f1" Precedes Name of the file with the DNA sequences in fasta format to be analysed searching for CRISPR targets.
+  * "-f2" Precedes Name of the file that contains the list of files with the reference genome
+  * "-L0" Precedes Threshold of global mismatches when number of mismatches in seed sequence in zero.
+  * "-L1" Precedes Threshold of global mismatches when number of mismatches in seed sequence in one.
+  * "-ENZ" Precedes identification of endonuclease to be used: "Cas9" or "Cas12a"
+  * "-NAG" Precedes "Yes" or "No", indicating is sequences with PAM "NAG" must be taken into account as possible off-targets
+  * "-OR" Preceeds "Yes" or "No". If "Yes" all CRISPR targets that do not match more than one query sequence will be discarded.
+
+```
+Command line example:
+
+ARES_GT_V2.0.py -f1 Sequences.txt -f2 ChromList.txt -L0 4 -L1 3 -ENZ Cas9 -NAG No -OR Nn
+
+ARES_GT_V2.0.py -f1 Sequences.fas -f2 ChromList.txt -L0 4 -L1 3 -ENZ Cas12a -OR Yes
+
+ARES_GT_V2.0.py -f1 Genes.txt -f2 Contigs.txt -L0 4 -L1 2 -ENZ Cas9 -NAG Yes -OR Yes
+```
+
+## Output (new in v2.0)
+
+ARES-GT generates a tabulated text file with results. The output format is similar to previous versions (see below in v1.2 output explanation). Some repetitive information have been also eliminated to make easier the results file interpretation.
+
+```
+[[[ TARGET KYO_CBF1_017 ]]]
+	PosStart	PosEnd	Sense	Sequence(with PAM)	Reverse
+	510	532	+	TGACGAACTCCTCTGTAAAT TGG	(CCA ATTTACAGAGGAGTTCGTCA)
+>>>><<<<
+>>HITS<<  NO mismatch in Seed sequence (11 nt)
+>>>><<<<
+
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+TAIR10_chr4	13015920	13015942	+	TGACGAACTCCTCTGTAAAT TGG	******************** ***	0	   NGG
+TAIR10_chr4	13022405	13022427	+	TGACGAACTCCTCTGTAAAT TGG	******************** ***	0	   NGG
+TAIR10_chr5	21117612	21117634	+	TGACGAACTCCTCTGTAAAT CGG	******************** C**	0	   NGG
+
+>>>><<<<
+>>HITS<<  1 mismatch in Seed sequence (11 nt)
+>>>><<<<
+
+Chrom	PosStart	PosEnd	Sense	Sequence(with PAM)	SeqIdentity	Mismatches	PAM
+TAIR10_chr4	13018837	13018859	+	CGACGAACTCCTCTGTATAT TGG	C****************T** ***	2	   NGG
+```
+
+New information have been added for listing those CRISPR sequences that can targets more than one query sequence. At the end of each line the number of possible off-targets (taking into account the multiple targets) is indicated. 
+
+```
+Example of candidate matching several sequences:
+
+KYO_CBF1_014 = KYO_CBF2_081	AGCACGAGCTGCCATCTCAG  NGG	Number of Possible OffTargets = 1
+KYO_CBF1_015 = KYO_CBF2_082	GAGCTGCCATCTCAGCGGTT  NGG	Number of Possible OffTargets = 0
+KYO_CBF1_017 = KYO_CBF2_084 = KYO_CBF4_211	TGACGAACTCCTCTGTAAAT  NGG	Number of Possible OffTargets = 1
+KYO_CBF1_018 = KYO_CBF2_085	GACGAACTCCTCTGTAAATT  NGG	Number of Possible OffTargets = 2
+KYO_CBF1_019 = KYO_CBF3_153	CGAAACTTCTTACGACCCGC  NGG	Number of Possible OffTargets = 0
+... ...
+```
+
+## In previous Versions:
+
 # ARES-GT (version 1.2.1)
 CRISPR sgRNAs guide analysis software
 
@@ -17,7 +113,7 @@ ARES-GT is a python (v2.7) script that uses datetime, sys, re and regex librarie
   * Reference GENOME files (one file per chromosome/contig).
   * LIST with the names of reference genome files.
   
-  Examples on input files are in "example" folder.
+  Examples of input files are in "example" folder.
   
   ```
   If all reference genome is in FASTA format file, SplitChrom.py script will split it in files
@@ -28,7 +124,7 @@ ARES-GT is a python (v2.7) script that uses datetime, sys, re and regex librarie
     
   ```
 
-# Using ARES-GT
+# Using ARES-GT (v1.2.1)
 
   Parameters
   
@@ -123,11 +219,11 @@ Análisis of Results
 
 Based on Cas9 and Cas12a sequence affinity information ARES-GT algorithm uses two steps for off-targets evaluation:
 
-  1) All possible CRISPR target candidates are identidied in DNA sequences.
+  1) All possible CRISPR target candidates are identidied in query DNA sequences.
   2) Each candidate is compared with Reference Genome to evaluate possible off-targets based on:
        - Any sequence with two or more mismatches in seed sequence is discarded.
-       - Any sequence with 1 mismatch in seed sequences is discarded if total mismatches are equal or more than L1 parameter.
-       - Any sequence with no mismatch in seed sequences is discarded if total mismatches are equal or more than L0 parameter.
+       - Any sequence with 1 mismatch in seed sequences is discarded if the total number  mismatches is more than L1 parameter.
+       - Any sequence with no mismatch in seed sequences is discarded if the total number of mismatches is more than L0 parameter.
 
 
 
