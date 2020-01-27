@@ -1,11 +1,14 @@
 ###############
-## Functions ##
+#  Functions  #
 ###############
+
+import sys
+
 
 def SplitChrom(filename):
     F = open(filename, "r")
     i = 0
-    R = open("Report.txt","w")
+    R = open("Report.txt", "w")
     Genome = F.readlines()
     Lines = ""
     names = []
@@ -17,7 +20,7 @@ def SplitChrom(filename):
             R.close()
             if line[1:20] in names:
                 i = i + 1
-                FILE = line[1:20]+ "_" + str(i) + ".txt"
+                FILE = line[1:20] + "_" + str(i) + ".txt"
             else:
                 names.append(line[1:20])
                 FILE = line[1:20] + ".txt"
@@ -27,19 +30,15 @@ def SplitChrom(filename):
         else:
             R.write(line)
     R.close()
-    R = open("ChromosomeList.txt","w")
+    R = open("ChromosomeList.txt", "w")
     R.write(Lines)
     R.close()
 
 
 ###############
-## Arguments ##
+#  Arguments  #
 ###############
-
-import sys
 
 filename = sys.argv[1]
 
 SplitChrom(filename)
-
-
