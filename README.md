@@ -1,4 +1,4 @@
-# ARES-GT (version 2.0)
+# ARES-GT (version 2.0/2.0.1)
 
 ## Overview
 
@@ -13,6 +13,8 @@ ARES-GT is licensed under the GNU Affero General Public License v3.0
 ## Installation
 
 ARES-GT is a python (v2.7) script that uses datetime, sys, re and regex libraries.
+
+* Version 2.0.1 has been modified for running in python 3.x versions.
 
 ## Input
 
@@ -31,7 +33,7 @@ ARES-GT is a python (v2.7) script that uses datetime, sys, re and regex librarie
     
   ```
 
-# Using ARES-GT (v2.0)
+# Using ARES-GT (v2.0/2.0.1)
 
 
   Parameters
@@ -54,7 +56,7 @@ ARES_GT_V2.0.py -f1 Sequences.fas -f2 ChromList.txt -L0 4 -L1 3 -ENZ Cas12a -OR 
 ARES_GT_V2.0.py -f1 Genes.txt -f2 Contigs.txt -L0 4 -L1 2 -ENZ Cas9 -NAG Yes -OR Yes
 ```
 
-## Output (new in v2.0)
+## Output (new in v2.0/2.0.1)
 
 ARES-GT generates a tabulated text file with results. The output format is similar to previous versions (see below in v1.2 output explanation). Some repetitive information have been also eliminated to make easier the results file interpretation.
 
