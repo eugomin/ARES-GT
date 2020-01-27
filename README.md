@@ -12,8 +12,9 @@ ARES-GT is licensed under the GNU Affero General Public License v3.0
 
 ## Installation
 
-ARES-GT is a python (v2.7) script that uses datetime, sys, re and regex libraries.
+ARES-GT is a python script that uses datetime, sys, re and regex libraries.
 
+* Version 2.0   is a python v2.7 script.
 * Version 2.0.1 has been modified for running in python 3.x versions.
 
 ## Input
