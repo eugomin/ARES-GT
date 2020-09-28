@@ -65,7 +65,7 @@ In the "Example V2.0" folder all files needed to test the software are available
 SplitChromV1.3.py Genome.txt
 ```
 
-It generates one txt file for each contig and a file named "ChromosomeList.txt" with the list of all the files that have been generated. This step is recommended as contig names are reduced to 20 characters, as in many genomes the name line in tha fasta format can be too long to allow an easy display of ARES-GT results. In the case of duplicated names a number index is added and order correspond with the original fasta file order. In the next version that function will be automatically added to ARES-GT.
+It generates one txt file for each contig and a file named "ChromosomeList.txt" with the list of all the files that have been generated. This step is recommended as contig names are reduced to 20 characters because in many genomes the name line in tha fasta format can contain many information and be too long to allow an easy display of ARES-GT results. In the case of duplicated names a number index is added with an order corresponding with the original fasta file order. In the next version that function will be automatically added to ARES-GT.
 
 Case 1)
 	A set of genes (in file "Genes.txt") must be evaluated and we want both specific targets for each gene and any target matching several genes. The selected endonuclease is Cas9 and offtargets with "NAG" PAM must be taken into account. User decide that offtarget threshold will be 5 total mismatches when no mismatches are found in seed sequences and 3 total mismatches when 1 mismatch is found in seed sequence:
