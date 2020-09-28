@@ -50,11 +50,42 @@ ARES-GT is a python script that uses datetime, sys, re and regex libraries.
 ```
 Command line example:
 
-ARES_GT_V2.0.py -f1 Sequences.txt -f2 ChromList.txt -L0 4 -L1 3 -ENZ Cas9 -NAG No -OR Nn
+ARES_GT_V2.0.py -f1 Sequences.txt -f2 ChromList.txt -L0 4 -L1 3 -ENZ Cas9 -NAG No -OR No
 
 ARES_GT_V2.0.py -f1 Sequences.fas -f2 ChromList.txt -L0 4 -L1 3 -ENZ Cas12a -OR Yes
 
 ARES_GT_V2.0.py -f1 Genes.txt -f2 Contigs.txt -L0 4 -L1 2 -ENZ Cas9 -NAG Yes -OR Yes
+```
+
+# Practical examples
+
+In the "Example V2.0" folder all files needed to test the software are available. File "Genome.txt" contains seveal contigs in fasta format, as an example of a reference genome. The first step is to extract each contig (in complete genomes it means each chromosome and any unlocated contig). The tool SplitChromV1.3.py will do the work as follow:
+
+```
+SplitChromV1.3.py Genome.txt
+```
+
+It generates one txt file for each contig and a file named "ChromosomeList.txt" with the list of all the files that have been generated. This step is recommended as contig names are reduced to 20 characters, as in many genomes the name line in tha fasta format can be too long to allow an easy display of ARES-GT results. In the case of duplicated names a number index is added and order correspond with the original fasta file order. In the next version that function will be automatically added to ARES-GT.
+
+Case 1)
+	A set of genes (in file "Genes.txt") must be evaluated and we want both specific targets for each gene and any target matching several genes. The selected endonuclease is Cas9 and offtargets with "NAG" PAM must be taken into account. User decide that offtarget threshold will be 5 total mismatches when no mismatches are found in seed sequences and 3 total mismatches when 1 mismatch is found in seed sequence:
+
+```
+ARES_GT_V2.0.py -f1 Genes.txt -f2 ChromosomeList.txt -L0 5 -L1 3 -ENZ Cas9 -NAG Yes -OR No
+```
+
+Case 2)
+	The same parameters than "case 1" but we only want to evaluate possible targets that match several of the sequences in Genes.txt file, discarding targets only matching one sequence:
+	
+```
+ARES_GT_V2.0.py -f1 Genes.txt -f2 ChromosomeList.txt -L0 5 -L1 3 -ENZ Cas9 -NAG Yes -OR Yes
+```
+
+Case 3)
+	The selected endonuclease is Cas12a and total mismatches threshold in the case of no mismatches in seed sequence will be 4 and 3 in the case of one mismatch in seed sequence. We only want possible targets matching several query sequences.
+	
+```
+ARES_GT_V2.0.py -f1 Genes.txt -f2 ChromosomeList.txt -L0 4 -L1 3 -ENZ Cas12a -OR Yes
 ```
 
 ## Output (new in v2.0/2.0.1)
