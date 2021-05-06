@@ -1,8 +1,8 @@
-´´´
-##NEW in version 2.1
+```
+#NEW in version 2.1
 
-#	The necessity in previous versions of having each contig of reference genome in idependent files (SplitChromV1.3.py is used in previous versions for that purpose) have been removed. Now, a unique file in FASTA format with all contigs of reference genome is used as input.
-´´´
+##	The necessity in previous versions of having each contig of reference genome in idependent files (SplitChromV1.3.py is used in previous versions for that purpose) have been removed. Now, a unique file in FASTA format with all contigs of reference genome is used as input.
+```
 
 # ARES-GT (version 2.0/2.0.1)
 
