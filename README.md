@@ -4,7 +4,7 @@
 ## The necessity in previous versions of having each contig of reference genome in idependent files (SplitChromV1.3.py is used in previous versions for that purpose) have been removed. Now, a unique file in FASTA format with all contigs of reference genome is used as input.
 
 
-# ARES-GT (version 2.0/2.0.1)
+# ARES-GT (version 2.0/2.0.1/2.1)
 
 ## Overview
 
@@ -22,12 +22,14 @@ ARES-GT is a python script that uses datetime, sys, re and regex libraries.
 
 * Version 2.0   is a python v2.7 script.
 * Version 2.0.1 has been modified for running in python 3.x versions.
+* Version 2.1   use a unique fasta file as input for reference genome (run in python 3.x versions) 
 
 ## Input
 
   * DNA sequences in FASTA format.
-  * Reference GENOME files (one file per chromosome/contig).
-  * LIST with the names of reference genome files.
+  * Reference GENOME files (one file per chromosome/contig) [versions 2.0 and 2.0.1].
+  * Reference GENOME file (FASTA format) [versions 2.1]
+  * LIST with the names of reference genome files [versions 2.0 and 2.0.1].
   
   Examples of input files are in "example" folder.
   
@@ -39,6 +41,28 @@ ARES-GT is a python script that uses datetime, sys, re and regex libraries.
              SplitChromV1.3.py Genome.fas
     
   ```
+
+# Using ARES-GT (v2.1)
+
+Parameters
+  
+  * "-f1" Precedes Name of the file with the DNA sequences in fasta format to be analysed searching for CRISPR targets.
+  * "-f2" Precedes Name of the file that contains the reference genome in FASTA format.
+  * "-L0" Precedes Threshold of global mismatches when number of mismatches in seed sequence in zero.
+  * "-L1" Precedes Threshold of global mismatches when number of mismatches in seed sequence in one.
+  * "-ENZ" Precedes identification of endonuclease to be used: "Cas9" or "Cas12a"
+  * "-NAG" Precedes "Yes" or "No", indicating is sequences with PAM "NAG" must be taken into account as possible off-targets
+  * "-OR" Preceeds "Yes" or "No". If "Yes" all CRISPR targets that do not match more than one query sequence will be discarded.
+
+```
+Command line example:
+
+ARES_GT_V2.1.py -f1 Sequences.txt -f2 HsGRCh38.p13.fna -L0 4 -L1 3 -ENZ Cas9 -NAG No -OR No
+
+ARES_GT_V2.1.py -f1 Sequences.fas -f2 Osativa_323_v7.0.fa -L0 4 -L1 3 -ENZ Cas12a -OR Yes
+
+ARES_GT_V2.1.py -f1 Genes.txt -f2 OwnGenome.consensus -L0 4 -L1 2 -ENZ Cas9 -NAG Yes -OR Yes
+```
 
 # Using ARES-GT (v2.0/2.0.1)
 
@@ -58,7 +82,7 @@ Command line example:
 
 ARES_GT_V2.0.py -f1 Sequences.txt -f2 ChromList.txt -L0 4 -L1 3 -ENZ Cas9 -NAG No -OR No
 
-ARES_GT_V2.0.py -f1 Sequences.fas -f2 ChromList.txt -L0 4 -L1 3 -ENZ Cas12a -OR Yes
+ARES_GT_V2.0.1.py -f1 Sequences.fas -f2 ChromList.txt -L0 4 -L1 3 -ENZ Cas12a -OR Yes
 
 ARES_GT_V2.0.py -f1 Genes.txt -f2 Contigs.txt -L0 4 -L1 2 -ENZ Cas9 -NAG Yes -OR Yes
 ```
@@ -71,7 +95,21 @@ In the "Example V2.0" folder all files needed to test the software are available
 SplitChromV1.3.py Genome.txt
 ```
 
-It generates one txt file for each contig and a file named "ChromosomeList.txt" with the list of all the files that have been generated. This step is recommended as contig names are reduced to 20 characters because in many genomes the name line in tha fasta format can contain many information and be too long to allow an easy display of ARES-GT results. In the case of duplicated names a number index is added with an order corresponding with the original fasta file order. In the next version that function will be automatically added to ARES-GT.
+It generates one txt file for each contig and a file named "ChromosomeList.txt" with the list of all the files that have been generated. This step is recommended as contig names are reduced to 20 characters because in many genomes the name line in tha fasta format can contain many information and be too long to allow an easy display of ARES-GT results. In the case of duplicated names a number index is added with an order corresponding with the original fasta file order. In the next version that function will be automatically added to ARES-GT. (ADDED function!! See version 2.1)
+
+Optional uses of SplitChromV1.3.py with version 2.1
+
+	This tools generates an independent file with each contig in the reference genome file, with can be used to resolve some questions when revising genomes.
+	
+	1) Version 2.1 use the complete reference genome in a fasta format, however contigs/chromosome names can contains many information so name it is trimmed to the first 20 characters. If some contigs share the same first 20 characters, an index is added to the name. Using SplitChromV1.3.py the independent files names will match exactly the same names used in the ARES-GT resuts file.
+
+	2) Prices for NGS services are getting down each month which makes easier to obtain de novo genomes of your favourite species. Anyway, a big number of contigs are provided specially when no public good reference genome is available, which is usually delivered in an unique file in fasta format. This tool easily splits that delivered file into independent files, one per contig. Then this contigs can be evaluated independently, for instance by contig-to-contig alignment and plotting. In the case of hybrid individuals, this methodology can help to identify groups of contigs that correspond with each haploid genome.
+
+
+
+```
+Practical cases
+```
 
 Case 1)
 	A set of genes (in file "Genes.txt") must be evaluated and we want both specific targets for each gene and any target matching several genes. The selected endonuclease is Cas9 and offtargets with "NAG" PAM must be taken into account. User decide that offtarget threshold will be 5 total mismatches when no mismatches are found in seed sequences and 3 total mismatches when 1 mismatch is found in seed sequence:
