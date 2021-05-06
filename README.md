@@ -1,3 +1,7 @@
+<div class="text-red mb-2">
+#NEW version 2.1
+	In version
+
 # ARES-GT (version 2.0/2.0.1)
 
 ## Overview
